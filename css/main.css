@@ -2,13 +2,16 @@
   width: 90%;
 }
 #main p {
-  font-size: 50px;
+  font-size: 30px;
 }
 #main p a {
   text-decoration: none;
 }
 #main p a:hover {
   font-weight: bold;
+}
+#main .sub {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,17 @@
+$baseFontSize: 30px;
+
 #main {
   width: 90%;
   p {
-    font-size: 50px;
+    font-size: $baseFontSize;
     a {
       text-decoration: none;
       &:hover {
         font-weight: bold;
       }
     }
+  }
+  .sub {
+    font-size: $baseFontSize - 10px;
   }
 }
