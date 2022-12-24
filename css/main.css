@@ -1,5 +1,6 @@
 #main {
   width: 90%;
+  background: url("../images/bg.jpg") no-repeat;
 }
 #main p {
   font-size: 30px;
@@ -9,6 +10,7 @@
 }
 #main p a:hover {
   font-weight: bold;
+  font-size: 14px;
 }
 #main .sub {
   font-size: 20px;

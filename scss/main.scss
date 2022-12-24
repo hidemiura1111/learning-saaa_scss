@@ -1,13 +1,16 @@
 $baseFontSize: 30px;
+$imgDir : "../images/";
 
 #main {
   width: 90%;
+  background: url("#{$imgDir}bg.jpg") no-repeat;
   p {
     font-size: $baseFontSize;
     a {
       text-decoration: none;
       &:hover {
         font-weight: bold;
+        font-size: #{12 + 2}px;
       }
     }
   }
