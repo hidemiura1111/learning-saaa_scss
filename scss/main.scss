@@ -1,13 +1,18 @@
 $baseFontSize: 30px;
 $imgDir : "../images/";
 $brandColor: #f00;
+$debugMode: true;
 
 #main {
   width: 90%;
   background: url("#{$imgDir}bg.jpg") no-repeat;
   p {
     font-size: $baseFontSize;
-    color: lighten($brandColor, 30%); // darken
+    @if ($debugMode) {
+      color: lighten($brandColor, 30%); // darken
+    } @else {
+      color: green;
+    }
     a {
       text-decoration: none;
       &:hover {
