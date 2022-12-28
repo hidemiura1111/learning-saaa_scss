@@ -24,4 +24,15 @@ $debugMode: true;
   .sub {
     font-size: $baseFontSize - 10px;
   }
+
+  // for and while
+  @for $i from 10 through 14 {
+    .size-#{$i} { font-size: #{$i}px }
+  }
+
+  $i: 20;
+  @while $i <= 24 {
+    .size2-#{$i} { font-size: #{$i}px }
+    $i: $i + 1;
+  }
 }
