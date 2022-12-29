@@ -1,18 +1,11 @@
+@import 'settings';
+@import 'functions';
+
 $baseFontSize: 30px;
 $imgDir : "../images/";
 $brandColor: #f00;
 $debugMode: true;
 $animals: (dog, cat, bird, fish);
-$totalWidth: 940px;
-$columnCount: 10;
-
-// function
-@function getColumnWidth($width, $count) {
-  $padding: 20px;
-  $columnWidth: floor(($width - ($padding * ($count - 1))) / $count);
-  @debug $columnWidth;
-  @return $columnWidth;
-}
 
 #main {
   width: 90%;
