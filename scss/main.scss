@@ -2,6 +2,7 @@ $baseFontSize: 30px;
 $imgDir : "../images/";
 $brandColor: #f00;
 $debugMode: true;
+$animals: (dog, cat, bird, fish);
 
 #main {
   width: 90%;
@@ -34,5 +35,12 @@ $debugMode: true;
   @while $i <= 24 {
     .size2-#{$i} { font-size: #{$i}px }
     $i: $i + 1;
+  }
+
+  // list
+  @each $animal in $animals {
+    .#{$animal}-icon {
+      background-image: url("#{$imgDir}#{$animal}.png");
+    }
   }
 }

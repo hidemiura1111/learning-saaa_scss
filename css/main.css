@@ -46,5 +46,17 @@
 #main .size2-24 {
   font-size: 24px;
 }
+#main .dog-icon {
+  background-image: url("../images/dog.png");
+}
+#main .cat-icon {
+  background-image: url("../images/cat.png");
+}
+#main .bird-icon {
+  background-image: url("../images/bird.png");
+}
+#main .fish-icon {
+  background-image: url("../images/fish.png");
+}
 
 /*# sourceMappingURL=main.css.map */
