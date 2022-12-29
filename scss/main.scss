@@ -3,6 +3,16 @@ $imgDir : "../images/";
 $brandColor: #f00;
 $debugMode: true;
 $animals: (dog, cat, bird, fish);
+$totalWidth: 940px;
+$columnCount: 10;
+
+// function
+@function getColumnWidth($width, $count) {
+  $padding: 20px;
+  $columnWidth: floor(($width - ($padding * ($count - 1))) / $count);
+  @debug $columnWidth;
+  @return $columnWidth;
+}
 
 #main {
   width: 90%;
@@ -42,5 +52,10 @@ $animals: (dog, cat, bird, fish);
     .#{$animal}-icon {
       background-image: url("#{$imgDir}#{$animal}.png");
     }
+  }
+
+  .grid {
+    float: left;
+    width: getColumnWidth($totalWidth, $columnCount);
   }
 }

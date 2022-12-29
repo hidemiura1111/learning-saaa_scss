@@ -58,5 +58,9 @@
 #main .fish-icon {
   background-image: url("../images/fish.png");
 }
+#main .grid {
+  float: left;
+  width: 76px;
+}
 
 /*# sourceMappingURL=main.css.map */
