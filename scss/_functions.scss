@@ -1,6 +1,6 @@
 @function getColumnWidth($width, $count) {
   $padding: 20px;
-  $columnWidth: floor(($width - ($padding * ($count - 1))) / $count);
+  $columnWidth: floor(($width - ($padding * ($count - 1)))) / $count;
   @debug $columnWidth;
   @return $columnWidth;
 }

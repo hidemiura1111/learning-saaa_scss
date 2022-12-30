@@ -62,5 +62,8 @@
   float: left;
   width: 76px;
 }
+#main .round {
+  border-radius: 10px;
+}
 
 /*# sourceMappingURL=main.css.map */

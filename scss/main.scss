@@ -7,6 +7,10 @@ $brandColor: #f00;
 $debugMode: true;
 $animals: (dog, cat, bird, fish);
 
+@mixin round($radius) {
+  border-radius: $radius;
+}
+
 #main {
   width: 90%;
   background: url("#{$imgDir}bg.jpg") no-repeat;
@@ -50,5 +54,9 @@ $animals: (dog, cat, bird, fish);
   .grid {
     float: left;
     width: getColumnWidth($totalWidth, $columnCount);
+  }
+
+  .round {
+    @include round(10px);
   }
 }
